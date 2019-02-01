@@ -14,22 +14,51 @@
 
     <div id="app">
 
+        <div class="panel panel-left panel-cover">
+            <div class="navbar">
+                <div class="navbar-inner">
+                </div>
+            </div>
+            <div class="list links-list">
+                <ul>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="panel panel-right panel-cover">
+            ... panel content goes here ...
+        </div>
+
         <div class="view view-main">
-
-
 
             <div class="page" data-name="home">
 
                 <div class="navbar">
                     <div class="navbar-inner">
-                        <div class="left">Left</div>
-                        <div class="right">Right</div>
+                        <div class="left">
+                            <a href="#" data-panel="left" class="panel-open">Left</a>
+                        </div>
+                        <div class="right">
+                            <a href="#" data-panel="right" class="panel-open">Right</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="toolbar tabbar toolbar-bottom-md">
+                    <div class="toolbar-inner">
+                        <a class="link" href="/page2/">Page 2</a>
+                        <a class="link">Link 2</a>
+                        <a class="link">Link 3</a>
                     </div>
                 </div>
 
-                <div class="page-content">
+
+                <div class="page-content hide-navbar-on-scroll hide-toolbar-on-scroll">
+                    <div class="big-content">
+                        this is going to be my page
+                    </div>
                     <!-- scrollable page content -->
-                    this is going to be my page
                 </div>
 
             </div> <!-- end main view -->
